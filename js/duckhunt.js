@@ -6,8 +6,7 @@ $(function () {
     const $body = $('body');
 
     // 1. Create a <div> with the class "duck" and add it to the body.
-    const $bodyDuck = $body.append('<div></div>');
-
+    const $newDuck = $body.append('<div></div>');
     $('div').addClass('duck');
     const $duck = $('.duck');
 
