@@ -42,6 +42,40 @@ header {
   display: none;
 }
 
+
+img {
+  width: 500px;
+  height: 500px;
+}
+
+.pacman {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  flex-flow: wrap;
+  margin: 50px;
+}
+
+.pacman * {
+  width: 500px;
+}
+
+.frogger {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  flex-flow: wrap;
+  margin: 50px;
+}
+
+.frogger * {
+  width: 500px;
+}
+
+
+
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
