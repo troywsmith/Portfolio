@@ -17,72 +17,360 @@
 </head>
 
 <body>
-  <header>
-      <div class="navbar" id="myNavbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
-      <h1>Troy Smith</h1>
+    <a name="home"></a>
+    <header>
+    <div class="navbar" id="myNavbar">
+      <a href="#home">Home</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
   </header>
   <main>
-    <div>
-      <p>I am a data analyst turned software developer. My background in data analytics and business intillegence has taught
-        me to be organized, thorough, and to persevere in intense situations, while my positive demeaner and zeal help give
-        focus to and energize the people around me. These traits are all very apparent in my programming style.
-      </p>
-      <img src="images/troysmithpic.png" alt="Mountain View">
-      <div id='socialmediawidgets'>
-        <a href="https://www.linkedin.com/in/troy-w-smith/">
-          <img title="GitHub" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="35"
-            height="35" />
-        </a>
-        <a href="https://github.com/troywsmith/">
-          <img title="Pinterest" alt="GitHub" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="35"
-            height="35" />
-        </a>
-        <a href="https://www.facebook.com/TroySmith24">
-          <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35"
-            height="35" />
-        </a>
-        <a href="https://www.instagram.com/_troysmith_/?hl=en">
-          <img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35"
-            height="35" />
-        </a>
+    <div class="page-container">
+      <div class="about">
+        <h1>Troy Smith</h1>
+        <h2>Full Stack Web Developer</h2>
+        <img src="images/troysmithpic.png" alt="Mountain View">
+        <h3>I am a data analyst turned software developer. My background in data analytics and business intillegence has taught
+          me to be organized, thorough, and to persevere in intense situations, while my positive demeaner and zeal help
+          give focus to and energize the people around me. These traits are all very apparent in my programming style.
+        </h3>
+        <div class='socialmediawidgets'>
+          <a href="https://www.linkedin.com/in/troy-w-smith/">
+            <img title="GitHub" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="35"
+              height="35" />
+          </a>
+          <a href="https://github.com/troywsmith/">
+            <img title="Pinterest" alt="GitHub" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="35"
+              height="35" />
+          </a>
+          <a href="https://www.facebook.com/TroySmith24">
+            <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35"
+              height="35" />
+          </a>
+          <a href="https://www.instagram.com/_troysmith_/?hl=en">
+            <img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35"
+              height="35" />
+          </a>
+        </div>
       </div>
-      <div class="timeline">
-        <div class="container left" href="link to project">
-          <div class="content">
-            <h3>GA Project 4</h3>
-            <p>Lorem ipsum..</p>
+
+      <div class="section" class="experience">
+        <div class="divheader">
+          <a name="experience">EXPERIENCE</a>
+        </div>
+
+        <div class="card">
+          <div class="cardheader">
+            <img src="data:image/png;base64,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">
+            <h4>GENERAL ASSEMBLY</h4>
+          </div>
+          <hr>
+          <div class="cardcontent">
+            <h5 class="role">Full Stack Web Developer</h5>
+            <p class="roledescription">12 week-long boot camp dedicated to preparing students to think like engineers and approach problems creatively
+              in order to build the next generation of web applications and digital products</p>
+            <ul class="description">
+              <li>Skills learned include HTML & CSS, Javascript, Angular.js, Backbone.js, Express.js. Node.js, React, Unix</li>
+              <li>Designed and developed a peer-to-peer cryptocurrency payment web application using Node.js/Express and PostgreSQL</li>
+              <li>Created an arcade website consisting of games developed using HTML, CSS, and jQuery for DOM manipulation </li>
+            </ul>
+            <hr>
+            <p class="timelocation">Apr 2018-Present | New York, NY</p>
           </div>
         </div>
-        <div class="container right" href="link to project">
-          <div class="content">
-            <h3>GA Project 3</h3>
-            <p>Lorem ipsum..</p>
+
+        <div class="card">
+          <div class="cardheader">
+            <img src="https://crypico.com/wp-content/uploads/2017/12/logo.png">
+            <h4>CRYPICO</h4>
+          </div>
+          <hr>
+          <div class="cardcontent">
+            <h5 class="role">Full Stack Web Developer</h5>
+            <p class="roledescription">Crypico is an online freelance services marketplace & community that allows users to pay for work and services
+              using any cryptocurrency</p>
+            <ul class="description">
+              <li>Performs technical analyses for development of new features</li>
+              <li>Design, develop, troubleshoot, debug, test, ensure browser compatibility, and implement website code</li>
+              <li>Ensure that security and quality assurance best practices are followed throughout the entire software development
+                lifecycle
+              </li>
+            </ul>
+            <hr>
+            <p class="timelocation">November 2017-Present | New York, NY</p>
           </div>
         </div>
-        <div class="container left" >
-          <div class="content" >
-            <a href="https://swaptokens.herokuapp.com/">GA Project 2</a>
-            <p>Peer-to-peer cryptocurrency exchange platform</p>
+
+        <div class="card">
+          <div class="cardheader">
+            <img src="https://i0.wp.com/marketbarker.com/wp-content/uploads/2018/04/imageedit_1_8941434457-e1528134925317.png?resize=300%2C300&ssl=1">
+            <h4>MARKET BARKER</h4>
+          </div>
+          <hr>
+          <div class="cardcontent">
+            <h5 class="role">Full Stack Web Developer | Founder</h5>
+            <p class="roledescription">MarketBarker is a comprehensive cryptocurrency news site committed to the fair and accurate reporting of information
+              in the blockchain community</p>
+            <ul class="description">
+              <li>Worked alongside my cofounders to develop the website using WordPress, PHP and MySQL </li>
+              <li>Covered news and analysis of trends, releases, companies, and people in the cryptocurrency industry</li>
+            </ul>
+            <hr>
+            <p class="timelocation">January 2018-Present | New York, NY</p>
           </div>
         </div>
-        <div class="container right" href="link to project">
-          <div class="content">
-            <h3>GA Project 1</h3>
-            <p>Game: Pac-Man & Frogger</p>
+
+        <div class="card">
+            <div class="cardheader">
+              <img src="https://www.sarnowfoodgroup.com/images/117425/layout/web_logo.png">
+              <h4>Sarnow Food Group</h4>
+            </div>
+            <hr>
+            <div class="cardcontent">
+              <h5 class="role">Director of Business Development</h5>
+              <p class="roledescription">Sarnow Food Group is a food service redistributor specializing in the Vending, Office Coffee Service, Concession, and Micro Market Segments</p>
+              <ul class="description">
+                <li>Developed automated processes in order to streamline data reporting</li>
+                <li>Used data analytics to identify sales opportunities, reduce spoils, and increase profit</li>
+                <li>Designed and updated company website and server</li>
+                <li>Updated, maintained, and installed software, networking, security, databases, and storage</li>
+              </ul>
+              <hr>
+              <p class="timelocation">July 2016-Arpil 2018 | New York, NY</p>
+            </div>
+          </div>
+
+          <div class="card">
+              <div class="cardheader">
+                <img src="http://www.goodhillpartners.com/wp/wp-content/themes/goodhill/images/logo-dark.svg">
+                <h4>Good Hill Partners</h4>
+              </div>
+              <hr>
+              <div class="cardcontent">
+                <h5 class="role">Financial Analyst</h5>
+                <p class="roledescription">Good Hill Partners is an asset management firm with deep expertise in investing in a broad range of fixed income classes</p>
+                <ul class="description">
+                  <li>Developed and analyzed high yield fixed income trade ideas for the hedge fund</li>
+                  <li>Conducted quantitative analysis of financial data to forecast revenue, identify future trends, and assess risk associated with capital expenditures, acquisitions, and joint-venture projects</li>
+                  <li>Created comprehensive reports, abstracts, and charts to present data and guide investment strategies</li>
+                </ul>
+                <hr>
+                <p class="timelocation">Nov 2015-February 2016 | Westport, CT</p>
+              </div>
+            </div>
+
+      </div>
+
+      <div class="section" class="skills">
+        <div class="divheader">
+          <a name="skills">SKILLS</a>
+        </div>
+
+        <div class="card">
+          <div class="cardheader">
+            <h4>HTML</h4>
+          </div>
+          <hr>
+          <div class="cardcontent">
+            <div class="descriptiondiv">
+              <div class="skill">
+                <img class="skillpic" src="https://cnet1.cbsistatic.com/img/Y9ee_x9iC5HfhohDUq8Dk8m9QYY=/770x433/2011/01/18/6ee1f979-f0f7-11e2-8c7c-d4ae52e62bcc/HTML5_Logo_550px.png">
+                <p>HTML5</p>
+              </div>
+              <div class="skill">
+                <img class="skillpic" src="https://react-etc.net/files/2017-12/react-hexagon.png">
+                <p>JSX</p>
+              </div>
+              <div class="skill">
+                <img class="skillpic" src="https://scotch.io/wp-content/uploads/2014/07/nodejs-templating-with-ejs.jpg">
+                <p>EJS</p>
+              </div>
+              <div class="skill">
+                <img class="skillpic" src="https://img08.deviantart.net/aed0/i/2012/172/5/0/html5_canvas_logo_by_netgoblin154-d54alet.png">
+                <p>Canvas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardheader">
+            <h4>CSS</h4>
+          </div>
+          <hr>
+          <div class="cardcontent">
+            <div class="descriptiondiv">
+              <div class="skill">
+                <img class="skillpic" src="https://www.shareicon.net/download/2016/08/01/639873_internet.svg">
+                <p>CSS3</p>
+              </div>
+              <div class="skill">
+                <img class="skillpic" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Boostrap_logo.svg">
+                <p>Bootstrap</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardheader">
+            <h4>JavaScript</h4>
+          </div>
+          <hr>
+          <div class="cardcontent">
+            <div class="descriptiondiv">
+              <div class="skill">
+                <img class="skillpic" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png">
+                <p>JavaScript</p>
+              </div>
+              <div class="skill">
+                <img class="skillpic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png">
+                <p>React</p>
+              </div>
+              <div class="skill">
+                <img class="skillpic" src="https://i.pinimg.com/originals/34/20/e5/3420e571b3d7a4a348d8fad91e3bfda4.png">
+                <p>jQuery</p>
+              </div>
+              <div class="skill">
+                <img class="skillpic" src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png">
+                <p>Node</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardheader">
+            <h4>Back-End</h4>
+          </div>
+          <hr>
+          <div class="cardcontent">
+            <div class="descriptiondiv">
+              <div class="skill">
+                <img class="skillpic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2000px-Ruby_logo.svg.png">
+                <p>Ruby</p>
+              </div>
+              <div class="skill">
+                <img class="skillpic" src="https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png">
+                <p>Rails</p>
+              </div>
+              <div class="skill">
+                <img class="skillpic" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg">
+                <p>PostgreSQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardheader">
+            <h4>Other</h4>
+          </div>
+          <hr>
+          <div class="cardcontent">
+            <div class="descriptiondiv">
+              <div class="skill">
+                <img class="skillpic" src="https://image.flaticon.com/icons/svg/25/25231.svg">
+                <p>GitHub</p>
+              </div>
+              <div class="skill">
+                <img class="skillpic" src="https://agileleague.com/wp-content/uploads/2012/09/heroku-logo-light3.png">
+                <p>Heroku</p>
+              </div>
+              <div class="skill">
+                <img class="skillpic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Microsoft_Office_2013_logo.svg/2000px-Microsoft_Office_2013_logo.svg.png">
+                <p>Microsoft Office</p>
+              </div>
+              <div class="skill">
+                <img class="skillpic" src="https://www.bbhub.io/mobile/sites/2/2014/05/media_app_icon.png">
+                <p>Bloomberg</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" class="education">
+        <div class="divheader">
+          <a name="education">EDUCATION</a>
+        </div>
+
+        <div class="card">
+          <div class="cardheader">
+            <img src="data:image/png;base64,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">
+            <h4>GENERAL ASSEMBLY</h4>
+          </div>
+          <hr>
+          <div class="cardcontent">
+            <p class="roledescription"></p>
+            <ul class="description">
+              <li>12 week-long boot camp dedicated to preparing students to think like engineers and approach problems creatively
+                in order to build the next generation of web applications and digital products</li>
+              <li>Skills learned include HTML & CSS, Javascript, Angular.js, Backbone.js, Express.js. Node.js, React, Unix</li>
+              <li>Designed and developed a peer-to-peer cryptocurrency payment web application using Node.js/Express and PostgreSQL
+              </li>
+              <li>Created an arcade website consisting of games developed using HTML, CSS, and jQuery for DOM manipulation
+              </li>
+            </ul>
+            <hr>
+            <p class="timelocation">Apr 2018-July 2018 | New York, NY</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardheader">
+            <img src="http://www.mse.umd.edu/sites/default/files/images/logos/umd-ball.jpg">
+            <h4>University of Maryland</h4>
+          </div>
+          <hr>
+          <div class="cardcontent">
+            <ul class="description">
+              <li>Bachelor of Arts</li>
+              <li>Major: Economics</li>
+              <li>Minor: Entrepreneurship in Technology</li>
+            </ul>
+            <hr>
+            <p class="timelocation">2012-2016 | College Park, Maryland</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="section" class="contact">
+        <div class="divheader">
+          <a name="contact">CONTACT</a>
+        </div>
+
+        <div class="card">
+          <div class="cardheader">
+            <img src="https://cdn1.iconfinder.com/data/icons/e-mail-2/512/YPS__email_mail_letter_envelope_postal-512.png">
+            <h4>troy@troywsmith.com</h4>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardheader">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg">
+            <h4>github.com/troywsmith</h4>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardheader">
+            <img src="https://png.icons8.com/metro/1600/linkedin.png">
+            <h4>linkedin.com/in/troy-w-smith/</h4>
           </div>
         </div>
       </div>
     </div>
   </main>
   <footer>
-
   </footer>
 </body>
 

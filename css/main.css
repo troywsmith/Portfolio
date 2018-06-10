@@ -1,61 +1,142 @@
 body {
-    font-size: 25px;
-    text-align: center;
-    background-image: url("https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png");
-    color: white;
-    background-color: #474e5d;
-    font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  /* background-image: url("https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png"); */
+  color: #274C77;
+  background-color: #E7ECEF;
+  font-family: 'Raleway', sans-serif;
 }
 
-header {
-    font-size: 50px;
+html {
+  line-height: 1.5;
+  font-family: "Roboto",sans-serif;
+  font-weight: normal;
+  color: rgba(0,0,0,0.87);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .navbar {
   position: fixed;
-  top: 2px; 
-  display: flex;
+  top: 0;
+  background-color: #6096BA;
+  color: white;
   width: 100%;
+  text-align: right;
+  display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  align-content: center;
 }
 
 .navbar a {
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
-
 }
 
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
+  color:white; 
+  text-decoration:none; 
+  cursor:pointer; }
 
 .navbar a.active {
   background-color: #4CAF50;
-  color: white;
 }
 
 .navbar .icon {
   display: none;
 }
 
+.about {
+  width: 70%;
+  margin: 70px auto auto auto;
+}
+
+.socialmediawidgets {
+  margin: 20px auto;
+}
+
+.socialmediawidgets a {
+  text-decoration: none;
+}
+
+
+.divheader {
+  background: #6096BA;
+  color: #E7ECEF;
+  font-size: 40px;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+.divheader:hover 
+{
+  color: #E7ECEF;
+  text-decoration:none; 
+}
+
+hr {
+  width: 100%;
+  color: #6096BA;
+}
+
+.section {
+  text-align: left
+}
+
+.card {
+  width: 85%;
+  background: white;
+  padding: 30px;
+  margin: 50px auto;
+}
+
+.cardheader {
+  display: flex;
+}
+
+.cardheader h4 {
+  padding-left: 20px;
+}
+
+.cardheader img {
+  height: 100px;
+  max-width: 200px;
+}
+
+.roledescription {
+  font-style: italic;
+}
+
+.descriptiondiv {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.skill {
+  text-align: center;
+  margin: 20px;
+}
+
+.skillpic {
+  width: 100px;
+  height: 80px;
+}
+
 @media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
+  .navbar a:not(:first-child) {
+    display: none;
+  }
   .navbar a.icon {
     float: right;
     display: block;
   }
-  h1 {
-    font-size: 50px;
-  }
-  p {
-    font-size: 20px;
-  }
 }
-
 
 @media screen and (max-width: 600px) {
   .navbar.responsive a.icon {
@@ -70,141 +151,238 @@ header {
   }
 }
 
-h1 {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-size: 80px;
-    padding: 20px 0px;
-}
-
-
-ul {
-  display: block;
-  right: 0;
-}
-
-li {
-  right: 0;
-}
-
-#socialmediawidgets a {
-    text-decoration: none;
-}
-
-
-* {
-    box-sizing: border-box;
-  }
-  
-  .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
+@media screen and (max-width: 600px) {
   .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
+    left: 31px;
   }
-  
   .container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
-  
-  .container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #FF9F55;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  .left {
-    left: 0;
-  }
-  
-  .right {
-    left: 50%;
-  }
-  
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
-  
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
+  .container::before {
+    left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
-  
+  .left::after,
   .right::after {
-    left: -16px;
+    left: 15px;
   }
-  
-  .content {
-    padding: 20px 30px;
-    background-color: white;
-    color: black;
+  .right {
+    left: 0%;
+  }
+}
+/* 
+@media (min-width: 1200px) {
+	#experience .container {
+		width: 860px
+	}
+}
+@media (max-width: 1360px) {
+	.card ul li {
+		font-size: 14px;
+		line-height: 200%;
+		margin-left: 20px;
+	}
+}
+@media (max-width: 1160px) {
+	.card ul li {
+		line-height: 150%;
+	}
+}
+@media (max-width: 992px) {
+	main {
+		padding-left: 0px;
+		padding-top: 64px;
+	}
+	ul.side-nav a {
+	  line-height: 100%;
+	  padding: 0;
+	  width: 100%;
+	}
+	nav {
+		background: #fff;
+		height: 64px;
+		position: absolute;
+	}
+	nav a.button-collapse,
+	nav a.button-collapse i {
+		color: #009688;
+		height: 56px;
+		line-height: 56px;
+	}
+	h3 {
+		padding: 20px 30px;
+  	margin-bottom: 40px;
+	}
+	.container {
+		margin:  0 auto;
+	}
+
+	nav.hide-on-large.only.trigger {
+		display: block;
+	  position: fixed;
+	  top: 0;
+	  z-index: 2;
+	}
+	.name-title {
+	  display: block;
+	  height: 100%;
+	  padding-top: 15px;
+	  text-align: center;
+	  width: 100%;
+    position: absolute;
+	}
+	.name-title > span,
+	.name-title > a {
     position: relative;
-    border-radius: 6px;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .timeline::after {
-      left: 31px;
-    }
-  
-    .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-    .container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
-  
-    .left::after, .right::after {
-      left: 15px;
-    }
-  
-    .right {
-      left: 0%;
-    }
-  }
+    line-height: 20px;
+	}
+	.name-title a {
+    font-size: 22px;
+    display: block;
+	}
+	.name-title span {
+    display: block;
+    font-size: 14px;
+	}
+	h3,
+	.container {
+    position: relative;
+    top: 64px;
+	}
+	section#intro {
+	    margin-bottom: -64px;
+	}
+	.card .role {
+    position: relative;
+    right: initial;
+    top: initial;
+	}
+}
+@media (max-width: 600px) {
+	h2 {
+	  font-size: 22px;
+	  line-height: 200%;
+	  margin: 30px 0 0;
+	}
+	#intro.section .container *:not(span) {
+		padding: 0;
+	}
+	.card .card-content .card-title {
+    font-size: 20px;
+    line-height: 24px;
+	}
+	#experience span.card-title {
+    text-align: center;
+    display: block
+	}
+	#experience span.card-title a {
+	   margin: 0;
+	}
+	i.mdi-navigation-close.right {
+	  position: relative;
+	  bottom: 35px;
+	}
+	#contact a:not(.btn-floating) {
+    text-align: center;
+    display: block;
+    left: initial;
+    bottom: initial;
+	}
+	#contact a.btn-floating.btn-large {
+	    display: block;
+	    text-align: center;
+	    margin: 0 auto;
+	}
+	#intro.section {
+		background-position-x: 30%;
+	}
+} */
 
 
-  
+/* 
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  color: black;
+  position: relative;
+  border-radius: 6px;
+} */
