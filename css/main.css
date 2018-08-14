@@ -64,7 +64,6 @@ html {
   text-decoration: none;
 }
 
-
 .divheader {
   background: #6096BA;
   color: #E7ECEF;
@@ -101,6 +100,17 @@ hr {
 
 .cardheader h4 {
   padding-left: 20px;
+  margin-top: 20px;
+}
+
+.cardheader a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 205);
+}
+
+.cardheader a:hover {
+  color: rgb(103, 103, 252);
 }
 
 .cardheader img {
